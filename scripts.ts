@@ -72,7 +72,7 @@ function skip (e: Event): void {
 function keyboardEvent (e: KeyboardEvent): void { 
   if (e.key === 'ArrowRight') videoPlayer.currentTime += 25
   if (e.key === 'ArrowLeft') videoPlayer.currentTime += -10
-  if (e.key === ' ') videoPlayer.paused ? videoPlayer.play() : videoPlayer.pause()
+  if (e.key === ' ') toogolePlayAndPause()
 }
 
 // init videoPlayer
@@ -80,4 +80,3 @@ videoPlayer.currentTime = 0
 videoPlayer.volume = 0.5
 videoPlayer.playbackRate = 1
 process.style.flexBasis = '0%'
-videoPlayer.play()

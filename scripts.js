@@ -67,11 +67,10 @@ function keyboardEvent(e) {
     if (e.key === 'ArrowLeft')
         videoPlayer.currentTime += -10;
     if (e.key === ' ')
-        videoPlayer.paused ? videoPlayer.play() : videoPlayer.pause();
+        toogolePlayAndPause();
 }
 // init videoPlayer
 videoPlayer.currentTime = 0;
 videoPlayer.volume = 0.5;
 videoPlayer.playbackRate = 1;
 process.style.flexBasis = '0%';
-videoPlayer.play();
